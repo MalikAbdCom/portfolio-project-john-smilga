@@ -12,11 +12,11 @@
       src="https://kit.fontawesome.com/47eb3b40e8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+	  <title>Document</title>
   </head>
   <body>
     <!--navigation-->
-    <nav class="navigation">
+    <nav id="nav" class="navigation">
       <!--	    nav header-->
       <div class="nav-header section-center">
         <img
@@ -24,9 +24,9 @@
           alt="Logo malik abd"
           class="nav-logo logo"
         />
-        <span class="nav-btn" id="nav-btn">
-          <i class="fas fa-bars"></i>
-        </span>
+        <button class="nav-btn" id="nav-btn" >
+          <i  class="fas fa-bars nav-btn-logo"></i>
+        </button>
         <!--	    nav links-->
         <ul class="nav-links">
           <li><a href="./index.html">Home</a></li>
@@ -40,7 +40,7 @@
       <!--	    end of nav header-->
     </nav>
     <!--    aside-->
-    <aside class="aside-container">
+    <aside id="sidebar" class="aside-container">
       <div class="section-center ">
         <div>
           <a class="close-btn" id="close-btn" href=""> <i class="fas fa-times"></i></a>
@@ -85,5 +85,7 @@
     </aside>
     <!--    end of aside-->
     <!--  end of navigation-->
+    <script src="./js/app.js"></script>
+
   </body>
 </html>

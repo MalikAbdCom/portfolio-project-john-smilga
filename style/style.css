@@ -180,15 +180,14 @@ Navbar
 .nav-btn {
   justify-self: end;
   font-size: 2rem;
+  background: transparent;
+  border: transparent;
+  color: var(--clr-grey-2);
+  transition: var(--transition);
 }
 .nav-logo {
   max-width: 15rem;
   max-height: 5rem;
-}
-.nav-btn {
-  color: var(--clr-grey-2);
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
 }
 .nav-btn:hover {
   color: var(--clr-grey-1);
@@ -202,6 +201,8 @@ Navbar
   }
   .nav-btn {
     display: none;
+    background: transparent;
+    border-color: transparent;
   }
   .nav-links {
     display: grid;
@@ -238,12 +239,12 @@ Sidebar
   place-items: center;
   transition: var(--transition);
   /*later*/
-  /*transform: translate(100%);*/
+  transform: translate(100%);
 
 }
-/*.aside-container *{*/
-/*  color:white;*/
-/*}*/
+.show-sidebar{
+  transform: translate(0);
+}
 .sidebar-links a{
   font-size: 2rem;
   text-transform: capitalize;
