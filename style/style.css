@@ -9,27 +9,21 @@ Fonts
 Variables
 ===============
 */
-
 :root {
-  /* dark shades of primary color*/
   --clr-primary-1: hsl(43, 86%, 17%);
   --clr-primary-2: hsl(43, 77%, 27%);
   --clr-primary-3: hsl(43, 72%, 37%);
   --clr-primary-4: hsl(42, 63%, 48%);
-  /* primary/main color */
   --clr-primary-5: hsl(42, 78%, 60%);
-  /* lighter shades of primary color */
   --clr-primary-6: hsl(43, 89%, 70%);
   --clr-primary-7: hsl(43, 90%, 76%);
   --clr-primary-8: hsl(45, 86%, 81%);
   --clr-primary-9: hsl(45, 90%, 88%);
   --clr-primary-10: hsl(45, 100%, 96%);
-  /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
-  /* grey used for paragraphs */
   --clr-grey-5: hsl(210, 22%, 49%);
   --clr-grey-6: hsl(209, 23%, 60%);
   --clr-grey-7: hsl(211, 27%, 70%);
@@ -172,7 +166,60 @@ p {
 Navbar
 ===============
 */
+.navigation{
+  padding: 1rem;
+  min-width: 300px;
+}
+.nav-header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
+}
+.nav-links{
+  display: none;
+}
+.nav-btn{
+  justify-self: end;
+  font-size: 2rem;
+}
+.nav-logo{
+  max-width: 15rem;
+  max-height: 5rem;
+}
+.nav-btn{
+  color: var(--clr-grey-2);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}.nav-btn:hover{
+  color: var(--clr-grey-1);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 758px) {
+  .navigation{
+    background-color: var(--clr-grey-1);
+    transition: var(--transition);
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-self: end;
+    grid-column-gap: 1rem;
+    align-items: center ;
+  }
+  .nav-links a{
+    font-size: 1rem;
+    font-weight: bold;
+  color: var(--clr-white);
+  transition: var(--transition);
+  }
+  .nav-links a:hover{
+  color: var(--clr-grey-9);
+  }
+}
 /*
 ===============
 Sidebar
