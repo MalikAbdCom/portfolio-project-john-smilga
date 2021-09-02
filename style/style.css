@@ -169,6 +169,8 @@ Navbar
 .navigation {
   padding: 1rem;
   min-width: 300px;
+  background-color: var(--clr-grey-1);
+  transition: var(--transition);
 }
 .nav-header {
   display: grid;
@@ -181,8 +183,9 @@ Navbar
   justify-self: end;
   font-size: 2rem;
   background: transparent;
+  margin: 1rem;
   border: transparent;
-  color: var(--clr-grey-2);
+  color: var(--clr-white);
   transition: var(--transition);
 }
 .nav-logo {
@@ -190,15 +193,11 @@ Navbar
   max-height: 5rem;
 }
 .nav-btn:hover {
-  color: var(--clr-grey-1);
+  color: var(--clr-grey-8);
   transform: scale(1.1);
 }
 
 @media screen and (min-width: 758px) {
-  .navigation {
-    background-color: var(--clr-grey-1);
-    transition: var(--transition);
-  }
   .nav-btn {
     display: none;
     background: transparent;
@@ -240,12 +239,11 @@ Sidebar
   transition: var(--transition);
   /*later*/
   transform: translate(100%);
-
 }
-.show-sidebar{
+.show-sidebar {
   transform: translate(0);
 }
-.sidebar-links a{
+.sidebar-links a {
   font-size: 2rem;
   text-transform: capitalize;
   display: block;
@@ -254,25 +252,25 @@ Sidebar
   color: var(--clr-white);
   font-weight: bold;
 }
-.sidebar-links a:hover{
+.sidebar-links a:hover {
   color: var(--clr-grey-8);
 }
-.social-icon{
+.social-icon {
   margin: 2rem auto 0 auto;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   width: 18rem;
 }
-.social-icon a{
+.social-icon a {
   color: var(--clr-white);
   font-size: 2rem;
   transition: var(--transition);
 }
-.social-icon a:hover{
+.social-icon a:hover {
   color: var(--clr-grey-8);
 }
-.close-btn{
+.close-btn {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
@@ -283,8 +281,17 @@ Sidebar
   transition: var(--transition);
   cursor: pointer;
 }
-.close-btn:hover  {
+.close-btn:hover {
   color: var(--clr-grey-8);
+}
+/*nav fixed*/
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-grey-1);
+  box-shadow: var(--dark-shadow);
 }
 /*
 ===============
