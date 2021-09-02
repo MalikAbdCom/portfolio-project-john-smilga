@@ -144,8 +144,8 @@ p {
   color: var(--clr-primary-1);
   background: var(--clr-primary-7);
 }
-.underline{
-  height: .25rem;
+.underline {
+  height: 0.25rem;
   width: 5rem;
   background-color: var(--clr-primary-5);
   margin: 0 auto;
@@ -305,38 +305,37 @@ Hero
 ===============
 */
 /* underline added to globals */
-.hero-info .underline{
+.hero-info .underline {
   margin-left: 0;
 }
-.hero{
+.hero {
   background-color: var(--clr-primary-9);
-
 }
-.header{
+.header {
   display: grid;
   place-items: center;
   height: calc(100vh - 5rem);
 }
-.header-icon{
+.header-icon {
   margin: 2rem 0;
   justify-items: start;
-}.header-icon a{
+}
+.header-icon a {
   color: var(--clr-grey-3);
 }
-.hero-img{
-  display: none ;
+.hero-img {
+  display: none;
 }
 @media screen and (min-width: 892px) {
-  .header{
+  .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
-  .hero-img{
+  .hero-img {
     display: initial;
     position: relative;
   }
-  .img-header-container::before{
+  .img-header-container::before {
     content: "";
     height: 100%;
     width: 100%;
@@ -345,13 +344,12 @@ Hero
     border-radius: 10px;
     top: 2rem;
     left: 2rem;
-
   }
-  .photo-header{
+  .photo-header {
     max-width: 22rem;
     max-height: 27rem;
     aspect-ratio: 4/6;
-    object-fit: cover ;
+    object-fit: cover;
     border-radius: 10px;
     position: relative;
   }
