@@ -327,7 +327,6 @@ Hero
 .img-header-container {
   display: none;
   position: relative;
-
 }
 
 @media screen and (min-width: 892px) {
@@ -342,7 +341,8 @@ Hero
   /*  display: initial;*/
   /*  position: relative;*/
   /*}*/
-  .img-header-container::before, .img-about-container::before  {
+  .img-header-container::before,
+  .img-about-container::before {
     content: "";
     height: 100%;
     width: 100%;
@@ -352,7 +352,6 @@ Hero
     top: 2rem;
     left: 2rem;
   }
-
 }
 .photo-header {
   max-width: 22rem;
@@ -369,37 +368,36 @@ About
 ===============
 */
 /* section title added to globals */
-.about-container{
+.about-container {
   display: grid;
   grid-gap: 2rem 2rem;
   justify-items: center;
 }
-.about-info-container .underline{
+.about-info-container .underline {
   margin-left: 0;
 }
-.photo-about{
+.photo-about {
   position: relative;
 }
-.about{
+.about {
   margin: auto 1rem;
- }
+}
 
-.about-title{
+.about-title {
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 992px) {
   .about-container {
     grid-template-columns: 1fr 1fr;
-
   }
-  .about-img{
+  .about-img {
     position: relative;
   }
-  .img-about-container::before{
+  .img-about-container::before {
     left: -2rem;
   }
-  .about-info{
+  .about-info {
     align-self: center;
   }
 }
