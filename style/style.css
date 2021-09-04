@@ -469,7 +469,7 @@ Projects
   text-align: center;
   width: 30rem;
   max-width: 85vw;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }
 .project-item {
   transition: var(--transition);
