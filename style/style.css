@@ -298,6 +298,7 @@ Sidebar
   width: 100%;
   background: var(--clr-grey-1);
   box-shadow: var(--dark-shadow);
+  z-index: 2;
 }
 /*
 ===============
@@ -326,6 +327,7 @@ Hero
 .hero-img {
   display: none;
 }
+
 @media screen and (min-width: 892px) {
   .header {
     display: grid;
@@ -345,14 +347,16 @@ Hero
     top: 2rem;
     left: 2rem;
   }
-  .photo-header {
-    max-width: 22rem;
-    max-height: 27rem;
-    aspect-ratio: 4/6;
-    object-fit: cover;
-    border-radius: 10px;
-    position: relative;
-  }
+
+}
+.photo-header {
+  max-width: 22rem;
+  max-height: 27rem;
+  aspect-ratio: 4/6;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  /*z-index: -1;*/
 }
 /*
 ===============
@@ -360,7 +364,24 @@ About
 ===============
 */
 /* section title added to globals */
+.about-container{
+  display: grid;
+  grid-gap: 2rem 2rem;
+  justify-items: center;
+}
+.about-info-container .underline{
+  margin-left: 0;
+}
+.photo-about{
+  position: relative;
+}
+.about{
+  margin: auto 1rem;
+ }
 
+.about-title{
+  margin-bottom: 0;
+}
 /*
 ===============
 Services
